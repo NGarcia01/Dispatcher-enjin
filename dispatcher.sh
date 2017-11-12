@@ -25,6 +25,8 @@ echo "$exp = $CURRENTEXP"
 			echo "SERVER = $SERVER"
 			echo "user = $Username"
 			echo "TODO = $TODO"
+			
+			#tmux send-keys -t $SERVER:0 "say Thanks for donating $Username" ENTER
 			#tmux send-keys -t $SERVER:0 "$TODO" ENTER
 			
                 CURRENTEXP=$(echo $OUT |awk '{print $1}')
